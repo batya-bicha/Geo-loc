@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+    </style>
+</head>
+
+<body onclick="eve(event)">
+
+    <img onclick="showRect(event)" src="images/world.gif">
+
+    <script>
+        function showRect(e) {
+            if (e.pageX > 590 && e.pageY > 220 && e.pageX < 610 && e.pageY < 245) {
+                window.open('city/NYC.html', '', '')
+            } else if (e.pageX > 960 && e.pageY > 160 && e.pageX < 980 && e.pageY < 180) {
+                window.open('city/London.html', '', '')
+            } else if (e.pageX > 1680 && e.pageY > 260 && e.pageX < 1700 && e.pageY < 280) {
+                window.open('city/Tokyo.html', '', '')
+            }
+        }
+    </script>
+
+</body>
+
+</html>

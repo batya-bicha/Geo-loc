@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokyo</title>
+    <style>
+        div {
+            width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        img {
+            width: 500px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <script>
+        let data = {
+            img: 'tokyo.jpg',
+            info: 'Tокио – столица Японии, шумный город, в котором современные небоскребы с неоновой подсветкой сочетаются с традиционными храмами. Среди деревьев расположен богато украшенный синтоистский храм Мэйдзи, известный своими высокими воротами. А в огромных общественных садах находится Императорский дворец. В городе много музеев. В Токийском национальном музее представлены произведения классического искусства, а в музее Эдо-Токио можно увидеть копию театра кабуки. '
+        }
+
+        let container = document.body;
+        container.innerHTML = `
+            <div>
+                <img src="../images/${data.img}">
+                <p>${data.info}</p>
+                <button onclick="window.close()">Закрыть</button>
+            </div>`;
+    </script>
+</body>
+
+</html>

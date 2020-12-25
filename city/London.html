@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>London</title>
+    <style>
+        div {
+            width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        img {
+            width: 500px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <script>
+        let data = {
+            img: 'london.jpg',
+            info: 'Лондон – столица Англии и Соединенного Королевства. История этого современного города уходит во времена римлян. В самом центре Лондона находится здание парламента – Вестминстерский дворец, а также знаменитая часовая башня Биг-Бен и Вестминстерское аббатство. Эта церковь является местом коронации британских монархов. На противоположном берегу Темзы расположено колесо обозрения "Лондонский глаз", с которого открывается панорамный вид не только на южный берег, но и на весь город.'
+        }
+
+        let container = document.body;
+        container.innerHTML = `
+            <div>
+                <img src="../images/${data.img}">
+                <p>${data.info}</p>
+                <button onclick="window.close()">Закрыть</button>
+            </div>`;
+    </script>
+</body>
+
+</html>

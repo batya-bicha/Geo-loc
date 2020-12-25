@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYC</title>
+    <style>
+        div {
+            width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        img {
+            width: 500px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <script>
+        let data = {
+            img: 'nyc.jpg',
+            info: 'Нью-Йорк включает пять боро (районов), расположенных в месте впадения реки Гудзон в Атлантический океан. В центре города расположен густонаселенный Манхэттен – один из крупнейших в мире коммерческих, финансовых и культурных центров. Главные достопримечательности Нью-Йорка – многочисленные небоскребы, в том числе Эмпайр-стейт-билдинг, и огромный Центральный парк. На залитой неоновыми огнями площади Таймс-сквер расположен театр "Бродвей".'
+        }
+
+        let container = document.body;
+        container.innerHTML = `
+            <div>
+                <img src="../images/${data.img}">
+                <p>${data.info}</p>
+                <button onclick="window.close()">Закрыть</button>
+            </div>`;
+    </script>
+</body>
+
+</html>
